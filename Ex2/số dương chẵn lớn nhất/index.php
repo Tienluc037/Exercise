@@ -13,5 +13,5 @@ function searchMax($arr){
 $arr = [1,5,6,7,8,-4,-1];
 echo "<pre>";
 print_r($arr);
-echo "Số chẵn lớn nhất là :" . searchMax($arr)."<hr>";
+echo "Số chẵn lớn nhất là :" . searchMax($arr);
 
