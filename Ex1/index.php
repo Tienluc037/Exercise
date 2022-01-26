@@ -10,16 +10,12 @@ function createArr($number) {
 }
 
 //print_r(createArr(5));
-
-
-//echo "<hr>";
-
-//Sắp xếp arr theo thứ tự tăng dần.
-
 $arr = createArr(5);
 echo "<pre>Tạo mảng ngẫu nhiên ";
 print_r($arr);
 
+
+//Sắp xếp arr theo thứ tự tăng dần.
 function sortArray($arr)
 {
     for ($i = 0; $i < count($arr); $i++) {
@@ -40,5 +36,14 @@ function sortArray($arr)
 }
 
 $arr = sortArray($arr);
-echo "<pre><hr> Sắp xếp mảng tăng dần";
+echo "<pre><hr> Sắp xếp mảng tăng dần ";
 print_r($arr);
+
+//Loại bỏ bớt các phần tử có giá trị giống nhau.
+$array = [1,2,5,6,1,3,5,5,4];
+function destroyDuplicate($array){
+        return array_unique($array);
+}
+
+echo "<pre><hr> Loại bỏ phần tử đã có trong ";
+print_r(destroyDuplicate($array));
