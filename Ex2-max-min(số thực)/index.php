@@ -32,3 +32,18 @@ echo "<pre><hr>Số lớn nhất trong mảng là: ";
 print_r($arr);
 
 
+//Tìm số nhỏ nhất trong mảng.
+function searchMin($arr){
+    $min = $arr[0];
+    for ($i = 1; $i < count($arr) ; $i++){
+        if ($arr[$i] < $min){
+            $min = $arr[$i];
+        }
+    }
+    return $min;
+}
+$arr = searchMin($arr);
+echo "<pre><hr>Số nhỏ nhất trong mảng là: ";
+print_r($arr);
+
+
